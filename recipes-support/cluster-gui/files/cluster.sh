@@ -1,8 +1,8 @@
 #!/bin/sh
 
-export WAYLAND_DISPLAY=wayland-0
 export DISPLAY=:0
-QT_QPA_PLATFORM=xcb
+export QT_QPA_PLATFORM=eglfs
+export QT_QPA_EGLFS_INTEGRATION=eglfs_kms
 
 cd /home/root/
 exec /home/root/cluster_v1
