@@ -1,6 +1,7 @@
 FILESEXTRAPATHS_prepend := "${THISDIR}/files:"
 
 SAVED_DIR := "${THISDIR}"
+SRC_URI += "file://softdog.cfg"
 
 do_configure_prepend () {
 	cp ${SAVED_DIR}/files/imx8mm-var-som.dts ${S}/arch/arm64/boot/dts/freescale/imx8mm-var-som.dts
