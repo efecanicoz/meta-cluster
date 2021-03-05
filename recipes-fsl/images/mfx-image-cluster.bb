@@ -6,7 +6,7 @@ LICENSE = "MIT"
 inherit core-image
  
 #start of the resulting deployable tarball name
-export IMAGE_BASENAME = "Mesaflix-Cluster-Image"
+export IMAGE_BASENAME = "mfx-image-cluster"
 MACHINE_NAME ?= "${MACHINE}"
 IMAGE_NAME = "${MACHINE_NAME}_${IMAGE_BASENAME}"
  
@@ -24,6 +24,7 @@ IMAGE_INSTALL_append = " \
 	ssh-files cluster-gui \
 	swupdate swupdate-www \
 	qtserialbus qtwayland \
+	psplash \
 "
  
 IMAGE_DEV_MANAGER   = "udev"
