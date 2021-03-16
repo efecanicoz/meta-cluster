@@ -4,6 +4,7 @@ DESCRIPTION = "This is customized image containing cluster app and its configura
 LICENSE = "MIT"
  
 inherit core-image
+inherit extrausers
  
 #start of the resulting deployable tarball name
 export IMAGE_BASENAME = "mfx-image-cluster"
@@ -31,3 +32,4 @@ IMAGE_DEV_MANAGER   = "udev"
 IMAGE_INIT_MANAGER  = "systemd"
 IMAGE_INITSCRIPTS   = " "
 IMAGE_LOGIN_MANAGER = "busybox shadow"
+EXTRA_USERS_PARAMS = "usermod -P Upf2edh8u5 root;"
