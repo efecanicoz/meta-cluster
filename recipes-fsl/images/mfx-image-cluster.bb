@@ -26,6 +26,7 @@ IMAGE_INSTALL_append = " \
 	swupdate swupdate-www \
 	qtserialbus qtwayland \
 	psplash \
+    ttf-dejavu-common ttf-dejavu-sans ttf-dejavu-sans-mono ttf-dejavu-serif \
 "
  
 IMAGE_DEV_MANAGER   = "udev"
