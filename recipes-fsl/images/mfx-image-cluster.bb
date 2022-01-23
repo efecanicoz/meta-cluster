@@ -28,7 +28,9 @@ IMAGE_INSTALL_append = " \
 	psplash \
     ttf-dejavu-common ttf-dejavu-sans ttf-dejavu-sans-mono ttf-dejavu-serif \
 "
- 
+
+IMAGE_INSTALL_remove += "arm-compute-library armnn onnxruntime tensorflow-lite bazel flatbuffers openjdk"
+
 IMAGE_DEV_MANAGER   = "udev"
 IMAGE_INIT_MANAGER  = "systemd"
 IMAGE_INITSCRIPTS   = " "
